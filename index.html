@@ -24,6 +24,9 @@
     </header>
 
     <div class="wrapper">
+        <span class="icon-close">
+            <box-icon name='message-square-x' size='lg'></box-icon>
+        </span>
         <div class="form-box login">
             <h1>Login</h1>
             <form action="#">
@@ -47,12 +50,50 @@
                 </div>
                 <button type="submit" class="btn">Login</button>
                 <div class="login-register">
-                    <p>Don't have an account?
+                    <p>Don't have an Account?
                         <a href="#" class="register-link">Register</a>
                     </p>
                 </div>
             </form>
         </div>
+
+        <div class="form-box register">
+            <h1>Registration</h1>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <box-icon type='solid' name='user'></box-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <box-icon type='solid' name='envelope'></box-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <box-icon type='solid' name='lock-alt'></box-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> I Agree 
+                        to the Terms & Conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an Account?
+                        <a href="#" class="register-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
