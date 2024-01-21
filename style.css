@@ -82,7 +82,7 @@ header {
     color: #000;
 }
 
-.navigation .btnSignUp-popup {
+.navigation .btnRegister-popup {
     width: 120px;
     height: 50px;
     border: 2px solid #fff;
@@ -95,7 +95,7 @@ header {
     margin-left: 10px;
 }
 
-.navigation .btnSignUp-popup:hover { 
+.navigation .btnRegister-popup:hover { 
     background: transparent;
     color: #fff;
 }
@@ -112,8 +112,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
-    transition: height 0.2s ease;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.5 ease, height 0.3s ease;
+}
+
+.wrapper.activeLogin-popup {
+    transform: scale(1);
 }
 
 .wrapper.active {
@@ -126,7 +131,7 @@ header {
 }
 
 .wrapper .form-box.login {
-    transition: transform .18s ease;
+    transition: transform .24s ease;
     transform: translateX(0);
 }
 
@@ -142,7 +147,7 @@ header {
 }
 
 .wrapper.active .form-box.register {
-    transition: transform .18s ease;
+    transition: transform .24s ease;
     transform: translateX(0);
 }
 
